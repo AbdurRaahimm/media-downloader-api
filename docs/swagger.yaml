@@ -1,0 +1,30 @@
+openapi: 3.0.0
+info:
+  title: Media Downloader API
+  description: API for downloading videos from YouTube, TikTok, and more
+  version: 1.0.0
+servers:
+  - url: http://localhost:3000/api/v1
+paths:
+  /status:
+    get:
+      summary: Get API status
+      responses:
+        200:
+          description: OK
+
+  /download/tiktok:
+    post:
+      summary: Download a TikTok video
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                url:
+                  type: string
+      responses:
+        200:
+          description: TikTok video details
