@@ -13,6 +13,7 @@
         "cors": "^2.8.5",
         "express": "^4.21.2",
         "express-rate-limit": "^6.11.2",
+        "morgan": "^1.10.1",
         "youtube-dl-exec": "^3.0.22"
     },
     "devDependencies": {

@@ -1,7 +1,6 @@
 import express from "express";
 import versionHandler from "../../middleware/versionHandler.js";
 import downloadLimiter from "../../middleware/downloadLimiter.js";
-import youtubeController from "../../controllers/v1/youtubeController.js";
 import tiktokController from "../../controllers/v1/tiktokController.js";
 import generalController from "../../controllers/v1/generalController.js";
 
@@ -18,7 +17,6 @@ router.get("/status", (req, res) => {
   });
 });
 
-router.post("/download/youtube", downloadLimiter, youtubeController);
 router.post("/download/tiktok", downloadLimiter, tiktokController);
 router.post("/download/all", downloadLimiter, generalController);
 
