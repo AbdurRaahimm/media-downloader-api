@@ -27,4 +27,21 @@ paths:
                   type: string
       responses:
         200:
-          description: TikTok video details
+          description: OK
+
+  /download/all:
+    post:
+      summary: Download a video from various platforms like YouTube, Instragram, etc.
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                url:
+                  type: string
+      responses:
+        200:
+          description: OK
+        
