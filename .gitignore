@@ -3,3 +3,6 @@ dist/
 
 #files
 test.js
+# Logs
+npm-debug.log
+log/
