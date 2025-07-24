@@ -4,7 +4,7 @@ info:
   description: API for downloading videos from YouTube, TikTok, and more
   version: 1.0.0
 servers:
-  - url: http://localhost:3000/api/v1
+  - url: https://media-downloader-api-45bf.onrender.com/api/v1
 paths:
   /status:
     get:
