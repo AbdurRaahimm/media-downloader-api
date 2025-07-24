@@ -7,6 +7,7 @@ const generalController = async (req, res) => {
   }
   try {
     const info = await youtubedl(url, {
+      youtubeDl: './yt-dlp',
       dumpSingleJson: true,
       noWarnings: true,
       preferFreeFormats: true,
