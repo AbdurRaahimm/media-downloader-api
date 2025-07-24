@@ -12,7 +12,21 @@ paths:
       responses:
         200:
           description: OK
-
+  /download/facebook:
+    post:
+      summary: Download a Facebook video
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                url:
+                  type: string
+      responses:
+        200:
+          description: OK
   /download/tiktok:
     post:
       summary: Download a TikTok video
