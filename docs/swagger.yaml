@@ -42,10 +42,24 @@ paths:
       responses:
         200:
           description: OK
-
+  /download/instagram:
+    post:
+      summary: Download an Instagram video
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                url:
+                  type: string
+      responses:
+        200:
+          description: OK
   /download/all:
     post:
-      summary: Download a video from various platforms like YouTube, Instragram, etc.
+      summary: Download a video from various platforms like YouTube, Instagram, etc.
       requestBody:
         required: true
         content:
