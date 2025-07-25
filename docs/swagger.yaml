@@ -71,7 +71,22 @@ paths:
                   type: string
       responses:
         200:
-          description: OK       
+          description: OK 
+  /download/twitter:
+    post:
+      summary: Download a Twitter video
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                url:
+                  type: string
+      responses:
+        200:
+          description: OK   
   /download/all:
     post:
       summary: Download a video from various platforms like YouTube, Instagram, etc.
