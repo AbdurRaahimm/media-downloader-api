@@ -3,8 +3,8 @@ import { youtube } from "btch-downloader";
 const ytController = async (req, res) => {
   try {
     const { url } = req.body;
-
-    if (!url || !url.includes("youtube.com")) {
+    
+    if (!url || !url.includes("youtube.com") && !url.includes("youtu.be")) {
       return res.status(400).json({
         error: "Invalid or missing Youtube video URL",
         version: req.apiVersion,
