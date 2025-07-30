@@ -1,5 +1,5 @@
 import { twitter } from 'btch-downloader';
-import isInvalidTwitterUrl from '../../utils/isInvalidTwitterUrl';
+import isInvalidTwitterUrl from '../../utils/isInvalidTwitterUrl.js';
 
 const twtController = async (req, res) => {
     try {
