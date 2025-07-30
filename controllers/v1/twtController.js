@@ -1,10 +1,11 @@
 import { twitter } from 'btch-downloader';
+import isInvalidTwitterUrl from '../../utils/isInvalidTwitterUrl';
 
 const twtController = async (req, res) => {
     try {
         const { url } = req.body;
     
-        if (!url || !url.includes("twitter.com")) {
+        if (isInvalidTwitterUrl(url)) {
         return res.status(400).json({
             error: "Invalid or missing Twitter video URL",
             version: req.apiVersion,
