@@ -1,10 +1,11 @@
 import { fbdown } from "btch-downloader";
+import isInvalidFbUrl from "../../utils/isInvalidFbUrl.js";
 
 const fbController = async (req, res) => {
   try {
     const { url } = req.body;
 
-    if (!url || !url.includes("facebook.com")) {
+    if (isInvalidFbUrl(url)) {
       return res.status(400).json({
         error: "Invalid or missing Facebook video URL",
         version: req.apiVersion,
