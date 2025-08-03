@@ -72,7 +72,6 @@ The API returns standard HTTP status codes for errors. The error response body i
 ## Dependencies
 
 - [Express](https://expressjs.com/)
-- [youtube-dl-exec](https://github.com/dytl/youtube-dl-exec)
 - [btch-downloader](https://www.npmjs.com/package/btch-downloader)
 - [cors](https://www.npmjs.com/package/cors)
 - [express-rate-limit](https://www.npmjs.com/package/express-rate-limit)
